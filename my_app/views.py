@@ -20,7 +20,10 @@ def home(request):
         'all_client': client,
         'all_footer': footer,
 
-
     }
 
     return render(request, "index.html", context)
+
+
+
+
