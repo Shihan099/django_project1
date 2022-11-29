@@ -22,6 +22,8 @@
     <!-- Custom CSS -->
     <link href="{% static 'frontend/css/startmin.css' %}" rel="stylesheet">
 
+    <link href="{% static 'frontend/css/fonts/fontawesome,min.css' %}">
+
     <!-- Morris Charts CSS -->
     <link href="{% static 'frontend/css/morris.css' %}" rel="stylesheet">
 
@@ -39,11 +41,13 @@
 
 {% include 'backend/top_bar.html'  %}
 
+
+
+<div class="main-content">
     {% block content %}
 
     {% endblock %}
-
-
+</div>
 
    <!-- jQuery -->
 <script src="{% static 'frontend/js/jquery.min.js' %}"></script>
