@@ -39,30 +39,35 @@
 </head>
 <body>
 
-{% include 'backend/top_bar.html' %}
 
 
 <div id="wrapper">
-    <div class="main-content">
-        {% block content %}
+    {% include 'backend/top_bar.html' %}
 
-        {% endblock %}
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                    {% block content %}
+
+                    {% endblock %}
+            </div>
+        </div>
     </div>
 </div>
 
 
-<!-- jQuery -->
-<script src="{% static 'frontend/js/jquery.min.js' %}"></script>
+            <!-- jQuery -->
+            <script src="{% static 'frontend/js/jquery.min.js' %}"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="{% static 'frontend/js/bootstrap.min.js' %}"></script>
+            <!-- Bootstrap Core JavaScript -->
+            <script src="{% static 'frontend/js/bootstrap.min.js' %}"></script>
 
 
-<!-- Metis Menu Plugin JavaScript -->
-<script src="{% static 'frontend/js/metisMenu.min.js' %}"></script>
+            <!-- Metis Menu Plugin JavaScript -->
+            <script src="{% static 'frontend/js/metisMenu.min.js' %}"></script>
 
-<!-- Custom Theme JavaScript -->
-<script src="{% static 'frontend/js/startmin.js' %}"></script>
+            <!-- Custom Theme JavaScript -->
+            <script src="{% static 'frontend/js/startmin.js' %}"></script>
 
 </body>
 </html>
