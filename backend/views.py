@@ -9,3 +9,7 @@ def index(request):
 # service starts here
 def all_services(request):
     return render(request, 'backend/service/list.html')
+
+
+def add_service(request):
+    return render(request, 'backend/service/add.html')
