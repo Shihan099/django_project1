@@ -22,7 +22,7 @@
     <!-- Custom CSS -->
     <link href="{% static 'frontend/css/startmin.css' %}" rel="stylesheet">
 
-    <link href="{% static 'frontend/css/fonts/fontawesome,min.css' %}">
+    <link href="{% static 'frontend/css/fonts/font-awesome.min.css' %}">
 
     <!-- Morris Charts CSS -->
     <link href="{% static 'frontend/css/morris.css' %}" rel="stylesheet">
@@ -39,10 +39,13 @@
 </head>
 <body>
 
-{% include 'backend/top_bar.html' %}
 
 
 <div id="wrapper">
+
+    {% include 'backend/top_bar.html' %}
+
+
     <div class="main-content">
         {% block content %}
 
