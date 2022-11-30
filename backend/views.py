@@ -13,3 +13,7 @@ def all_services(request):
 
 def add_service(request):
     return render(request, 'backend/service/add.html')
+
+
+def edit_service(request):
+    return render(request, 'backend/service/add.html')
