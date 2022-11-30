@@ -6,4 +6,6 @@ def index(request):
     return render(request, 'backend/home.html')
 
 
-
+# service starts here
+def all_services(request):
+    return render(request, 'backend/service/list.html')
