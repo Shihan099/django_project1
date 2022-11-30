@@ -37,23 +37,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-   <body>
+<body>
 
-{% include 'backend/top_bar.html'  %}
+{% include 'backend/top_bar.html' %}
 
 
+<div id="wrapper">
+    <div class="main-content">
+        {% block content %}
 
-<div class="main-content">
-    {% block content %}
-
-    {% endblock %}
+        {% endblock %}
+    </div>
 </div>
 
-   <!-- jQuery -->
+
+<!-- jQuery -->
 <script src="{% static 'frontend/js/jquery.min.js' %}"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="{% static 'frontend/js/bootstrap.min.js' %}"></script>
+
 
 <!-- Metis Menu Plugin JavaScript -->
 <script src="{% static 'frontend/js/metisMenu.min.js' %}"></script>
@@ -61,5 +64,5 @@
 <!-- Custom Theme JavaScript -->
 <script src="{% static 'frontend/js/startmin.js' %}"></script>
 
-   </body>
+</body>
 </html>
