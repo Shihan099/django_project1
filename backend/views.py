@@ -17,3 +17,51 @@ def add_service(request):
 
 def edit_service(request):
     return render(request, 'backend/service/add.html')
+
+
+def all_portfolio(request):
+    return render(request, 'backend/portfolio/list.html')
+
+
+def add_portfolio(request):
+    return render(request, 'backend/portfolio/add.html')
+
+
+def edit_portfolio(request):
+    return render(request, 'backend/portfolio/add.html')
+
+
+def all_about(request):
+    return render(request, 'backend/about/list.html')
+
+
+def add_about(request):
+    return render(request, 'backend/about/add.html')
+
+
+def edit_about(request):
+    return render(request, 'backend/about/add.html')
+
+
+def all_team(request):
+    return render(request, 'backend/team/list.html')
+
+
+def add_team(request):
+    return render(request, 'backend/team/add.html')
+
+
+def edit_team(request):
+    return render(request, 'backend/team/add.html')
+
+
+def all_contact(request):
+    return render(request, 'backend/contact/list.html')
+
+
+def add_contact(request):
+    return render(request, 'backend/contact/add.html')
+
+
+def edit_contact(request):
+    return render(request, 'backend/contact/add.html')
