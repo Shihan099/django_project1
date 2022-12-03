@@ -12,8 +12,8 @@ media/
 # Python
 *.pyc
 env/
-venv/
-**/__pycache__/
+venv
+__pycache__/
 # Databases
 *.sqlite3
 
