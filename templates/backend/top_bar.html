@@ -86,18 +86,54 @@
                     </ul>
                     <!-- /.nav-second-level -->
                 </li>
-                <li>
-                    <a href="#" class="active"><i class="fa fa-dashboard fa-fw"></i> Portfolio</a>
-                </li>
-                <li>
-                    <a href="#" class="active"><i class="fa fa-dashboard fa-fw"></i> About</a>
-                </li>
-                <li>
-                    <a href="#" class="active"><i class="fa fa-dashboard fa-fw"></i> Team</a>
-                </li>
-                <li>
-                    <a href="#" class="active"><i class="fa fa-dashboard fa-fw"></i> Contact</a>
-                </li>
+                 <li>
+                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Portfolio <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="{% url 'add_portfolio' %}">Add Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'all_portfolio' %}">All Portfolio</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                 </li>
+                      <li>
+                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> About <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="{% url 'add_about' %}">Add About</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'all_about' %}">All About</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                 </li>
+                      <li>
+                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Team <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="{% url 'add_team' %}">Add Team</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'all_team' %}">All Team</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                 </li>
+                      <li>
+                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Contact <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="{% url 'add_contact' %}">Add Contact</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'all_contact' %}">All Contact</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                 </li>
 
             </ul>
 
