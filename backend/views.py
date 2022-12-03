@@ -10,7 +10,12 @@ def index(request):
 
 # service starts here
 def all_services(request):
-    return render(request, 'backend/service/list.html')
+    services = Service.objects.all()
+
+    context = {
+        'all_services': services
+    }
+    return render(request, 'backend/service/list.html', context)
 
 
 def add_service(request):
