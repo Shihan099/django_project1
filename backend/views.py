@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+#frontend local
+from frontend.models import Service
 
 # Create your views here.
 def index(request):
