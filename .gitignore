@@ -12,11 +12,12 @@ media/
 # Python
 *.pyc
 env/
-venv/
-**/__pycache__/
+venv
+__pycache__/
 # Databases
 *.sqlite3
 
 # JavaScript
 node_modules/
 build/ # Webpack build output
+.idea/
