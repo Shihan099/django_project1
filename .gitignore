@@ -4,8 +4,6 @@
 *.png
 
 # IDE
-.idea/ # PyCharm settings
-./idea/workspace.xml
 .vscode/ # VSCode settings
 media/
 **/migrations/
@@ -20,4 +18,4 @@ __pycache__/
 # JavaScript
 node_modules/
 build/ # Webpack build output
-.idea/
+
